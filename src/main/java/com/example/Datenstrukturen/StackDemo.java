@@ -10,14 +10,14 @@ public class StackDemo {
         Stack<String> stack = new Stack<>();
 
         // Elemente hinzufügen
-        System.out.println("Füge A, B, C zum Stack hinzu.");
+        System.out.println("Füge A, B, C zum Stack hinzu --> stack.push(item):");
         stack.push("A");
         stack.push("B");
         stack.push("C");
         System.out.println(stack); // [A, B, C]
 
         // Element entfernen
-        System.out.println("\nEntferne oberstes Element:");
+        System.out.println("\nEntferne oberstes Element--> stack.pop():");
         String entfernt = stack.pop();
         System.out.println(entfernt + " wurde entfernt.");
 
@@ -26,7 +26,7 @@ public class StackDemo {
         System.out.println(stack); // [A, B]
 
         // Spitze des Stacks anzeigen
-        System.out.println("\nSpitze des Stacks (peek):");
+        System.out.println("\nSpitze des Stacks --> stack.peak():");
         System.out.println(stack.peek()); // B
     }
 }

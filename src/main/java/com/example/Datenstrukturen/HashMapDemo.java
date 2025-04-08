@@ -10,7 +10,7 @@ public class HashMapDemo {
         HashMap<String, String> hashMap = new HashMap<>();
 
         // Einträge hinzufügen
-        System.out.println("Füge Einträge hinzu:");
+        System.out.println("Füge Einträge hinzu --> hasMap.put(key,value):");
         hashMap.put("Name", "Max");
         System.out.println("Name → Max");
         hashMap.put("Alter", "25");
@@ -19,15 +19,15 @@ public class HashMapDemo {
         System.out.println("Stadt → Ravensburg");
 
         // Abrufen eines Wertes
-        System.out.println("\nGib den Namen aus:");
+        System.out.println("\nGib den Namen aus --> hasMap.get(key):");
         System.out.println(hashMap.get("Name")); // Max
 
         // Schlüssel überprüfen
-        System.out.println("\nExistiert Schlüssel 'Alter'?");
+        System.out.println("\nExistiert Schlüssel 'Alter'? --> hasMap.containsKey(key):");
         System.out.println(hashMap.containsKey("Alter")); // true
 
         // Eintrag entfernen
-        System.out.println("\nEntferne Schlüssel 'Stadt'.");
+        System.out.println("\nEntferne Schlüssel 'Stadt' --> hasMap.remove(key):");
         hashMap.remove("Stadt");
 
         // Inhalt anzeigen
