@@ -1,4 +1,4 @@
-# 📛 Datenstrukturen in Java – Kapitel 2
+# Datenstrukturen in Java – Kapitel 2
 
 Dieses Java-Projekt veranschaulicht die grundlegenden Datenstrukturen aus Kapitel 2 des Moduls **"Programmierung II – Datenstrukturen und Algorithmen"** .
 
