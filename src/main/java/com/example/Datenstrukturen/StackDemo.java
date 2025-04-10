@@ -1,6 +1,6 @@
 package com.example.Datenstrukturen;
 
-import java.util.Stack;
+import com.example.Datenstrukturen.util.Stack;
 
 public class StackDemo {
     public static void run() {

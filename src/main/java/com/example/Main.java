@@ -8,6 +8,7 @@ import com.example.Datenstrukturen.HashMapDemo;
 import com.example.Datenstrukturen.LinkedListDemo;
 import com.example.Datenstrukturen.QueueDemo;
 import com.example.Datenstrukturen.StackDemo;
+import com.example.Datenstrukturen.QueueZirkulaerDemo;
 
 public class Main {
     public static void main(String[] args) {
@@ -48,6 +49,7 @@ public class Main {
             System.out.println("4. Deque");
             System.out.println("5. Stack");
             System.out.println("6. HashMap");
+            System.out.println("7. QueueZirkulaer");
             System.out.println("0. Zurück");
             System.out.print("Wähle eine Option: ");
 
@@ -60,6 +62,7 @@ public class Main {
                 case 4 -> DequeDemo.run();
                 case 5 -> StackDemo.run();
                 case 6 -> HashMapDemo.run();
+                case 7 -> QueueZirkulaerDemo.run();
                 case 0 -> dsRunning = false;
                 default -> System.out.println("Ungültige Eingabe.");
             }
