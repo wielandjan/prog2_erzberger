@@ -29,6 +29,9 @@ public class Stack<T> {
     }
 
     public T pop() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
         T value = top.getData();
         top = top.getNext();
         size--;
@@ -36,6 +39,9 @@ public class Stack<T> {
     }
 
     public T peek() {
+        if (isEmpty()) {
+            throw new IllegalStateException("Stack is empty");
+        }
         return top.getData();
     }
 
@@ -58,5 +64,4 @@ public class Stack<T> {
         sb.append("null");
         return sb.toString();
     }
-
 }
