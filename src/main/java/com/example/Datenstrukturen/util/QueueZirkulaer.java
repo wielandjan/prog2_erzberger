@@ -31,7 +31,7 @@ public class QueueZirkulaer<T> {
         this.maxSize = maxSize;
     }
 
-    public void enqueue(T value) {
+    public T enqueue(T value) {
         Node<T> newNode = new Node<>(value);
         if (size == 0) {
             newNode.setNext(newNode);
@@ -44,13 +44,14 @@ public class QueueZirkulaer<T> {
         if (size < maxSize) {
             size++;
         } else {
-            throw new IllegalStateException("Queue is full");
+            return null;
         }
+        return value;
     }
 
     public T dequeue() {
         if (size == 0)
-            throw new IllegalStateException("Queue is empty");
+            return null;
         head = tail.getNext();
         if (size == 1) {
             tail = head;
@@ -63,7 +64,8 @@ public class QueueZirkulaer<T> {
 
     public T peek() {
         if (size == 0)
-            throw new IllegalStateException("Queue is empty");
+            return null;
+
         return tail.getNext().getData();
     }
 

@@ -30,7 +30,7 @@ public class Stack<T> {
 
     public T pop() {
         if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
+            return null;
         }
         T value = top.getData();
         top = top.getNext();
@@ -40,7 +40,7 @@ public class Stack<T> {
 
     public T peek() {
         if (isEmpty()) {
-            throw new IllegalStateException("Stack is empty");
+            return null;
         }
         return top.getData();
     }
@@ -61,7 +61,7 @@ public class Stack<T> {
             sb.append(current.getData()).append(" -> ");
             current = current.getNext();
         }
-        sb.append("null");
+        sb.append("(top)");
         return sb.toString();
     }
 }
