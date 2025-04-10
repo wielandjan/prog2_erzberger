@@ -44,7 +44,7 @@ public class QueueZirkulaer<T> {
         if (size < maxSize) {
             size++;
         } else {
-            tail.setNext(tail.getNext().getNext());
+            throw new IllegalStateException("Queue is full");
         }
     }
 
